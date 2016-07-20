@@ -53,10 +53,8 @@
             cabal update
 
             if ($env:BOND_BUILD -eq "Doc") {
-
-                cabal install -v3 lifted-base-0.2.3.6
                 
-                cabal install --verbose=0 pandoc
+                cabal install --verbose=0 pandoc-1.17.1
 
                 choco install doxygen.install -y
 
