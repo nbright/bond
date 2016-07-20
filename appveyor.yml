@@ -54,7 +54,7 @@
 
             if ($env:BOND_BUILD -eq "Doc") {
                 
-                cabal install --verbose=0 pandoc-1.17.1
+                cabal install --verbose=3 pandoc --constraint='lifted-base<=0.2.3.6'
 
                 choco install doxygen.install -y
 
