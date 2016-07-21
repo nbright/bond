@@ -156,7 +156,7 @@
 
             if ($env:BOND_BUILD -eq "C++") {
 
-                cmake --build . --target check -- /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /m:2
+                cmake --build . --target check -- /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /m:2 /Zm100
 
             }
 
